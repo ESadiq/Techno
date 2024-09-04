@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techno WorkDo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  
+    <link rel="stylesheet" href="assets/css/style.css" />
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="top">
+          <div class="start">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://www.x.com/" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.pinterest.com/" target="_blank"
+              ><i class="fa-brands fa-pinterest-p"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="14"
+              viewBox="0 0 11 14"
+              fill="none"
+            >
+              <path
+                d="M8.31971 2.64538C7.04716 1.12373 5.79101 0.134725 5.73824 0.0934373C5.45149 -0.130859 5.03115 0.0741056 5.03115 0.437961V2.36183C5.03115 3.35526 3.71646 3.70487 3.22376 2.84143C3.07056 2.57363 2.69803 2.54541 2.50518 2.781C1.1812 4.39676 0 6.43402 0 8.53155C0 11.547 2.45323 14.0002 5.46864 14.0002C8.48405 14.0002 10.9373 11.547 10.9373 8.53155C10.9373 6.37975 9.69483 4.28985 8.31971 2.64538ZM3.06244 7.00033C3.06244 6.51772 3.45509 6.12534 3.93742 6.12534C4.41975 6.12534 4.8124 6.51772 4.8124 7.00033C4.8124 7.48293 4.41975 7.87531 3.93742 7.87531C3.45509 7.87531 3.06244 7.48293 3.06244 7.00033ZM4.28276 10.7688C4.13522 10.9589 3.86026 10.9943 3.66891 10.8456C3.47805 10.6971 3.44387 10.4223 3.59207 10.2317L6.65451 6.29433C6.80299 6.10347 7.07778 6.06929 7.26837 6.21749C7.45922 6.36596 7.4934 6.64076 7.3452 6.83135L4.28276 10.7688ZM6.99986 10.9377C6.51752 10.9377 6.12487 10.5454 6.12487 10.0628C6.12487 9.58016 6.51752 9.18778 6.99986 9.18778C7.48219 9.18778 7.87484 9.58016 7.87484 10.0628C7.87484 10.5454 7.48219 10.9377 6.99986 10.9377Z"
+                fill="white"
+              ></path>
+            </svg>
+            <h6>Summer sale discount off 30%!</h6>
+          </div>
+          <div class="lang">
+            <button onclick="toggleDropdown()" class="dropbtn">USD<i class="fa-solid fa-chevron-down"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#link1">AZN</a>
+            <a href="#link2">EUR</a>
+            <a href="#link3">USD</a>
+        </div>
+        <button onclick="toggleDropdown2()" class="dropbtn">ENG<i class="fa-solid fa-chevron-down"></i></button>
+        <div id="myDropdown2" class="dropdown-content">
+            <a href="#link1">AZE</a>
+            <a href="#link2">DE</a>
+            <a href="#link3">ENG</a>
+        </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="logo">
+            <img
+              src="https://techno-workdo.myshopify.com/cdn/shop/files/logo.png?v=1714558773"
+              alt=""
+            />
+          </div>
+          <div class="nav-link">
+            <div class="dropdown">
+              <div class="dropbtn">
+                <a><span>Home</span><i class="fa-solid fa-chevron-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <div class="just-between">
+                  <div class="text-side">
+                    <div class="text-left">
+                      <h3><a href="#">Category Page</a></h3>
+                      <a href="#">Airpods</a>
+                      <a href="#">Headphones</a>
+                      <a href="#">Laptops</a>
+                      <a href="#">Mobiles</a>
+                      <a href="#">Smart-Watches</a>
+                      <a href="#">Speaker</a>
+                    </div>
+                    <div class="text-right">
+                      <h3><a href="#">Feature Product</a></h3>
+                      <a href="#">Product Video</a>
+                      <a href="#">Simple Product</a>
+                      <a href="#">Product Countdown Timer</a>
+                      <a href="#">Product Color Swatch</a>
+                    </div>
+                  </div>
+                  <div class="img-side">
+                    <img
+                      src="https://techno-workdo.myshopify.com/cdn/shop/files/megamenu-1.png?v=1715229196"
+                      alt="iPhone"
+                    />
+                    <img
+                      src="https://techno-workdo.myshopify.com/cdn/shop/files/megamenu-2.png?v=1715229196"
+                      alt="Airpods"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown2">
+              <div class="dropbtn">
+                <a
+                  ><span>Products</span><i class="fa-solid fa-chevron-down"></i
+                ></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">Apple IPhone 15 Pro Max</a>
+                <a href="#">OnePlus 11</a>
+                <a href="#">Oppo F25 Pro</a>
+                <a href="#">Samsung Galaxy Z Flip 5</a>
+                <a href="#">OnePlus 11</a>
+              </div>
+            </div>
+            <div class="dropdown3">
+              <div class="dropbtn">
+                <a
+                  ><span>Pages</span><i class="fa-solid fa-chevron-down"></i
+                ></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQ's</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping &amp; Return</a>
+                <a href="#">Terms &amp; Condition</a>
+              </div>
+            </div>
+            <div class="dropdown4">
+              <div class="dropbtn">
+                <a
+                  ><span>Blogs</span><i class="fa-solid fa-chevron-down"></i
+                ></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">Blog Page</a>
+                <a href="#">Article Page</a>
+              </div>
+            </div>
+          </div>
+          <div class="end">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+              >
+                <path
+                  d="M12.8589 12.178L9.36383 8.68284C10.1301 7.76406 10.5926 6.58348 10.5926 5.29625C10.5926 2.37585 8.2167 0 5.29628 0C2.37586 0 0 2.37585 0 5.29625C0 8.21665 2.37586 10.5925 5.29628 10.5925C6.58352 10.5925 7.76411 10.13 8.6829 9.36376L12.1781 12.8589C12.2721 12.9529 12.3954 13 12.5185 13C12.6416 13 12.7649 12.9529 12.8589 12.8589C13.047 12.6708 13.047 12.366 12.8589 12.178ZM0.962961 5.29625C0.962961 2.90692 2.9067 0.962954 5.29628 0.962954C7.68587 0.962954 9.62961 2.90692 9.62961 5.29625C9.62961 7.68558 7.68587 9.62954 5.29628 9.62954C2.9067 9.62954 0.962961 7.68558 0.962961 5.29625Z"
+                  fill="white"
+                ></path></svg></a>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+              >
+                <path
+                  d="M11.9688 8.25225C11.538 7.87367 11.0155 7.54657 10.4157 7.28007C10.1593 7.16621 9.8593 7.28165 9.74544 7.53794C9.63158 7.79423 9.74702 8.09425 10.0033 8.20821C10.509 8.43296 10.9448 8.70442 11.2984 9.01516C11.7343 9.3982 11.9844 9.95283 11.9844 10.5371V11.4766C11.9844 11.7566 11.7566 11.9844 11.4766 11.9844H1.52344C1.24345 11.9844 1.01562 11.7566 1.01562 11.4766V10.5371C1.01562 9.95283 1.26566 9.3982 1.70157 9.01516C2.21464 8.56428 3.70951 7.51562 6.5 7.51562C8.57201 7.51562 10.2578 5.82983 10.2578 3.75781C10.2578 1.6858 8.57201 0 6.5 0C4.42799 0 2.74219 1.6858 2.74219 3.75781C2.74219 4.96912 3.31844 6.04823 4.21107 6.73586C2.57774 7.09489 1.56172 7.786 1.0312 8.25225C0.3759 8.828 0 9.66074 0 10.5371V11.4766C0 12.3166 0.683365 13 1.52344 13H11.4766C12.3166 13 13 12.3166 13 11.4766V10.5371C13 9.66074 12.6241 8.828 11.9688 8.25225ZM3.75781 3.75781C3.75781 2.24578 4.98797 1.01562 6.5 1.01562C8.01203 1.01562 9.24219 2.24578 9.24219 3.75781C9.24219 5.26984 8.01203 6.5 6.5 6.5C4.98797 6.5 3.75781 5.26984 3.75781 3.75781Z"
+                  fill="white"
+                ></path></svg></a>
+            <a href="cart.html"
+          ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="none"
+              >
+                <path
+                  d="M5.83326 12.3957L5.83364 12.396C6.31474 12.8239 6.85978 13.3088 7.42508 13.8247C7.58386 13.9698 7.78797 14.05 8 14.05C8.21192 14.05 8.41614 13.9698 8.57481 13.8249C9.14139 13.3078 9.68729 12.8221 10.1692 12.3936L10.1692 12.3936L10.1724 12.3908C11.5802 11.1386 12.8006 10.053 13.6507 8.98235C14.6034 7.78266 15.05 6.64083 15.05 5.39134C15.05 4.17994 14.6521 3.06008 13.927 2.23912L13.8895 2.27222L13.927 2.23912C13.1929 1.40814 12.1848 0.95 11.0891 0.95C10.2691 0.95 9.518 1.22086 8.85802 1.75361C8.54218 2.00852 8.25501 2.31722 8.00001 2.67479C7.74509 2.31721 7.45782 2.00852 7.1421 1.75361L7.14209 1.75361C6.4821 1.22086 5.73101 0.95 4.91101 0.95C3.81522 0.95 2.80722 1.40814 2.07315 2.23912L2.07315 2.23912C1.34801 3.06008 0.95 4.17994 0.95 5.39134C0.95 6.64083 1.39674 7.78266 2.34939 8.98246C3.19971 10.0533 4.42069 11.1393 5.82921 12.392L5.83081 12.3935L5.83118 12.3938L5.83326 12.3957ZM6.43202 11.6699L6.4316 11.6696L6.42946 11.6677C6.42938 11.6676 6.4293 11.6676 6.42922 11.6675C5.04686 10.4379 3.85778 9.38006 3.05907 8.37413C2.23425 7.33541 1.86999 6.41652 1.86999 5.39134C1.86999 4.41677 2.18394 3.5274 2.75094 2.88547C3.30926 2.25352 4.07603 1.90595 4.91101 1.90595C5.52125 1.90595 6.08161 2.10817 6.57759 2.50845C7.02057 2.86603 7.33007 3.31905 7.51193 3.63725L7.51194 3.63726C7.6149 3.81729 7.7973 3.92609 8 3.92609C8.2027 3.92609 8.3851 3.81729 8.48806 3.63726C8.67004 3.31905 8.97954 2.86602 9.42242 2.50844C9.9184 2.10817 10.4787 1.90595 11.0891 1.90595C11.924 1.90595 12.6909 2.25352 13.2491 2.88547C13.8161 3.52739 14.13 4.41677 14.13 5.39134C14.13 6.41652 13.7657 7.33541 12.941 8.37413C12.1424 9.37995 10.9536 10.4375 9.57153 11.6669L9.57087 11.6675C9.57087 11.6675 9.57087 11.6675 9.57086 11.6675C9.09651 12.0892 8.56005 12.5665 7.99889 13.0761C7.44099 12.5674 6.90539 12.091 6.43202 11.6699Z"
+                  fill="white"
+                  stroke="white"
+                  stroke-width="0.1"
+                ></path>
+              </svg>
+              <span class="count">0</span>
+            </a>
+            <a href="cart.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.63906 0C4.91051 0 3.48322 1.28895 3.26567 2.95833H2.87365C2.28453 2.95832 1.796 2.9583 1.41259 3.01187C1.00952 3.06819 0.647347 3.19254 0.371908 3.50028C0.0964673 3.80802 0.0128707 4.18172 0.00140834 4.58853C-0.00949549 4.97551 0.0444692 5.46105 0.109544 6.04654L0.291714 7.68605C0.427815 8.91103 0.534705 9.87314 0.716258 10.6209C0.902349 11.3873 1.17912 11.9855 1.69296 12.4454C2.20728 12.9057 2.83532 13.1145 3.62188 13.2147C4.38983 13.3125 5.36498 13.3125 6.60741 13.3125H6.67072C7.9131 13.3125 8.88828 13.3125 9.65621 13.2147C10.4428 13.1145 11.0708 12.9057 11.5852 12.4454C12.099 11.9855 12.3757 11.3873 12.5618 10.6209C12.7434 9.87314 12.8503 8.91109 12.9864 7.6861L13.1686 6.04654C13.2336 5.46106 13.2876 4.97551 13.2767 4.58853C13.2652 4.18172 13.1817 3.80802 12.9062 3.50028C12.6308 3.19254 12.2686 3.06819 11.8655 3.01187C11.4821 2.9583 10.9936 2.95832 10.4044 2.95833H10.0124C9.79501 1.28908 8.36756 0 6.63906 0ZM6.63906 0.8875C7.87641 0.8875 8.90503 1.78121 9.11459 2.95833H4.16346C4.37295 1.78133 5.40171 0.8875 6.63906 0.8875ZM1.03321 4.09217C1.11054 4.00577 1.23326 3.93305 1.5354 3.89083C1.85013 3.84686 2.27613 3.84583 2.90639 3.84583H10.3717C11.002 3.84583 11.428 3.84686 11.7427 3.89083C12.0448 3.93305 12.1675 4.00577 12.2449 4.09217C12.3222 4.17858 12.3809 4.30858 12.3895 4.61353C12.3985 4.93119 12.3525 5.3547 12.2829 5.9811L12.1078 7.55647C11.9674 8.81991 11.866 9.7254 11.6994 10.4115C11.5358 11.0853 11.3218 11.49 10.9933 11.7841C10.6652 12.0778 10.2373 12.246 9.54409 12.3343C8.8387 12.4242 7.92002 12.425 6.63906 12.425C5.35807 12.425 4.43941 12.4242 3.73402 12.3343C3.04073 12.246 2.61294 12.0778 2.28485 11.7841C1.95627 11.49 1.7423 11.0853 1.5787 10.4115C1.41212 9.7254 1.31066 8.81991 1.17027 7.55647L0.995235 5.9811C0.925631 5.3547 0.879606 4.93119 0.888557 4.61353C0.897148 4.30858 0.955871 4.17858 1.03321 4.09217Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M10.1893 5.76874C10.1893 6.09552 9.92437 6.36041 9.59765 6.36041C9.27087 6.36041 9.00598 6.09552 9.00598 5.76874C9.00598 5.44198 9.27087 5.17708 9.59765 5.17708C9.92437 5.17708 10.1893 5.44198 10.1893 5.76874Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M4.27208 5.76874C4.27208 6.09552 4.00718 6.36041 3.68041 6.36041C3.35365 6.36041 3.08875 6.09552 3.08875 5.76874C3.08875 5.44198 3.35365 5.17708 3.68041 5.17708C4.00718 5.17708 4.27208 5.44198 4.27208 5.76874Z"
+                  fill="white"
+                ></path>
+              </svg>
+              <span class="count">0</span>
+            </a>
+            <div class="res-bar">
+              <nav>
+                  <div class="nav-right hidden-xs">
+                      <div class="button btn">
+                          <div class="bar top"></div>
+                          <div class="bar middle"></div>
+                          <div class="bar bottom"></div>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+          <div class="sidebar">
+              <ul class="sidebar-list">
+                  <li class="sidebar-item"><a href="#" class="sidebar-anchor">Home</a></li>
+                  <li class="sidebar-item"><a href="#" class="sidebar-anchor">Product Page</a></li>
+                  <li class="sidebar-item"><a href="#" class="sidebar-anchor">Product Features</a></li>
+                  <li class="sidebar-item"><a href="#" class="sidebar-anchor">Pages</a></li>
+              </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img
+            src="https://techno-workdo.myshopify.com/cdn/shop/files/main-banner-1.png?v=1714560913"
+          />
+          <div class="main-content">
+            <h5>Flat 30% off. on all Digital</h5>
+            <div>
+              <h1>HEADPHONE</h1>
+              <h1>HEADPHONE</h1>
+            </div>
+            <div class="btn"><a href="">Shop Now</a></div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img
+            src="https://techno-workdo.myshopify.com/cdn/shop/files/main-banner-2.png?v=1714560913"
+            style="width: 100%"
+          />
+          <div class="main-content">
+            <h5>Flat 30% off. on all Digital</h5>
+            <div>
+              <h1>IPHONE15</h1>
+              <h1>IPHONE15</h1>
+            </div>
+            <div class="btn"><a href="">Shop Now</a></div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img
+            src="https://techno-workdo.myshopify.com/cdn/shop/files/main-banner-3.png?v=1714560913"
+            style="width: 100%"
+          />
+          <div class="main-content ">
+            <h5>Flat 30% off. on all Digital</h5>
+            <div>
+              <h1>SPEAKER</h1>
+              <h1>SPEAKER</h1>
+            </div>
+            <div class="btn"><a href="">Shop Now</a></div>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <div class="earbuds">
+        <img
+          src="https://techno-workdo.myshopify.com/cdn/shop/files/banner-img-1.png?v=1714561466"
+          alt=""
+        />
+      </div>
+      <div class="headphone">
+        <img
+          src="https://techno-workdo.myshopify.com/cdn/shop/files/banner-img-2.png?v=1714561470"
+          alt=""
+        />
+      </div>
+    </div>
+    <section class="tre-cat">
+      <div>
+        <h2>TRENDING CATEGORIES</h2>
+        <h2>TRENDING CATEGORIES</h2>
+      </div>
+      <div class="slider">
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-6_x100.png?v=1714566664" alt="" class="img-responsive" />
+          <h1>smart watch</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-1_x100.png?v=1714565025" alt="" class="img-responsive" />
+          <h1>iPhone</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-2_x100.png?v=1714565025" alt="" class="img-responsive" />
+          <h1>speaker</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-3_x100.png?v=1714565025" alt="" class="img-responsive" />
+          <h1>headphones</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-4_x100.png?v=1714565025" alt="" class="img-responsive" />
+          <h1>laptops</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-5_x100.png?v=1714565025" alt="" class="img-responsive" />
+          <h1>airpods</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-6_x100.png?v=1714566664" alt="" class="img-responsive" />
+          <h1>smart watch</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-1_x100.png?v=1714565025" alt="" class="img-responsive" />
+          <h1>iPhone</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-2_x100.png?v=1714565025" alt="" class="img-responsive" />
+          <h1>speaker</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-3_x100.png?v=1714565025" alt="" class="img-responsive" />
+          <h1>headphones</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-4_x100.png?v=1714565025" alt="" class="img-responsive" />
+          <h1>laptops</h1>
+        </div>
+        <div class="slide">
+          <img src="https://techno-workdo.myshopify.com/cdn/shop/files/category-5_x100.png?v=1714565025" alt="" class="img-responsive" />
+          <h1>airpods</h1>
+        </div>
+        
+      </div>
+    </section>
+    <div class="nav-right visible-xs">
+      <div class="button" id="btn">
+        <div class="sbar top"></div>
+        <div class="sbar middle"></div>
+        <div class="sbar bottom"></div>
+      </div>
+    </div>
+    <section>
+      <div class="containers">
+     
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="image-box">
+              <img src="//techno-workdo.myshopify.com/cdn/shop/files/box-image-1.png?v=1714622893" alt="two-img" loading="lazy">
+              <div class="image-box-inner">
+                <div class="subtitle">Sony Mdr 10rbt</div>
+                <div class="section-title">
+                  <h2>New Collection</h2>
+                </div>
+                <div class="a-button"><a href="/collections" class="after-blog" tabindex="0">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12">
+            <div class="image-box">
+
+              <img src="//techno-workdo.myshopify.com/cdn/shop/files/box-image-2.png?v=1714622894" alt="two-img" loading="lazy">
+              <div class="image-box-inner">
+                <div class="subtitle">MacBook Pro</div>
+                <div class="section-title">
+                  <h2>Best New</h2>
+                </div>
+
+                <div class="a-button"><a href="/collections" class="after-blog" tabindex="0">
+                    Shop Now
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+
+      
+      <div class="containers">
+        <div class="row gy-3">
+
+          
+          <div class="col-lg-3 col-sm-12">
+            <div class="card-content" data-card-id="1">
+              <div class="card-img">
+                <span class="left-up-text">New</span>
+                <img src="https://techno-workdo.myshopify.com/cdn/shop/files/1_e9e59616-679b-425c-9727-68ecda099dac_300x300.png?v=1714546414" alt="">
+                <div class="card-buton a-button">
+                  <a class="after-blog addtobtn">+ Add to Card</a>
+                </div>
+              </div>
+
+              <div class="card-text mt-1 px-1">
+                <h5 class="mb-1 names">Zebronics Bluetooth Speaker</h5>
+                <span>☆ ☆ ☆ ☆ ☆</span>
+                <span class="price">20.00</span><del class="ms-2">$25.00</del>
+                <div class="d-flex gy-2">
+                  <label><input class="wht" type="radio" name="color1" value="Black"></label>
+                  <label class="ms-2"><input class="blck" type="radio" name="color1" value="Gray"></label>
+                </div>
+                <div class="bot-icon">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>|</span>
+                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  <span>|</span>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      <div class="col-lg-3 col-sm-12">
+        <div class="card-content" data-card-id="2">
+          <div class="card-img">
+            <span class="left-up-text">New</span>
+            <img src="https://techno-workdo.myshopify.com/cdn/shop/files/1_d35fa6d8-4b05-4473-9c9a-760e458f8590_300x300.png?v=1714545641" alt="">
+            <div class="card-buton a-button">
+              <a class="after-blog addtobtn">+ Add to Card</a>
+            </div>
+
+          </div>
+
+          <div class="card-text mt-1 px-1">
+            <h5 class="mb-1 names">Ultra Max 2.01 Big Display</h5>
+            <span>☆ ☆ ☆ ☆ ☆</span>
+            <span class="price">20.00</span><del class="ms-2">$25.00</del>
+            <div class="d-flex gy-2">
+              <label><input class="wht" type="radio" name="color1" value="Black"></label>
+              <label class="ms-2"><input class="blck" type="radio" name="color1" value="Gray"></label>
+            </div>
+            <div class="bot-icon">
+              <i class="fa-regular fa-heart"></i>
+              <span>|</span>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <span>|</span>
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-12">
+        <div class="card-content" data-card-id="3">
+          <div class="card-img">
+            <span class="left-up-text">New</span>
+            <img src="https://techno-workdo.myshopify.com/cdn/shop/files/1_9393ce0e-c8f3-4084-8843-67341af5550f_670x820.png?v=1714543619" alt="">
+            <div class="card-buton a-button">
+              <a class="after-blog addtobtn">+ Add to Card</a>
+            </div>
+
+          </div>
+
+          <div class="card-text mt-1 px-1">
+            <h5 class="mb-1 names">HP Victus Gaming Laptop</h5>
+            <span>☆ ☆ ☆ ☆ ☆</span>
+            <span class="price">20.00</span><del class="ms-2">$25.00</del>
+            <div class="d-flex gy-2">
+              <label><input class="wht" type="radio" name="color1" value="Black"></label>
+              <label class="ms-2"><input class="blck" type="radio" name="color1" value="Gray"></label>
+            </div>
+            <div class="bot-icon">
+              <i class="fa-regular fa-heart"></i>
+              <span>|</span>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <span>|</span>
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ 
+      <div class="col-lg-3 col-sm-12">
+        <div class="card-content" data-card-id="4">
+          <div class="card-img">
+            <span class="left-up-text">New</span>
+            <img src="https://techno-workdo.myshopify.com/cdn/shop/files/2_25d0f435-6a76-449a-be15-1a168f68fd8f_300x300.png?v=1714543098" alt="">
+            <div class="card-buton a-button">
+              <a class="after-blog addtobtn">+ Add to Card</a>
+            </div>
+          </div>
+          <div class="card-text mt-1 px-1">
+            <h5 class="mb-1 names">Soundcore Wireless Headphones</h5>
+            <span>☆ ☆ ☆ ☆ ☆</span>
+            <span class="price">20.00</span><del class="ms-2">$25.00</del>
+            <div class="d-flex gy-2">
+              <label><input class="wht" type="radio" name="color1" value="Black"></label>
+              <label class="ms-2"><input class="blck" type="radio" name="color1" value="Gray"></label>
+            </div>
+            <div class="bot-icon">
+              <i class="fa-regular fa-heart"></i>
+              <span>|</span>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <span>|</span>
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-12">
+        <div class="card-content" data-card-id="5">
+          <div class="card-img">
+            <span class="left-up-text">New</span>
+            <img src="https://techno-workdo.myshopify.com/cdn/shop/files/1_4ea41212-60ac-430f-9e78-f7aac1088ca3_300x300.png?v=1714546001" alt="">
+            <div class="card-buton a-button">
+              <a class="after-blog addtobtn">+ Add to Card</a>
+            </div>
+          </div>
+          <div class="card-text mt-1 px-1">
+            <h5 class="mb-1 names">Noise Buds VS104</h5>
+            <span>☆ ☆ ☆ ☆ ☆</span>
+            <span class="price">20.00</span><del class="ms-2">$25.00</del>
+            <div class="d-flex gy-2">
+              <label><input class="wht" type="radio" name="color1" value="Black"></label>
+              <label class="ms-2"><input class="blck" type="radio" name="color1" value="Gray"></label>
+            </div>
+            <div class="bot-icon">
+              <i class="fa-regular fa-heart"></i>
+              <span>|</span>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <span>|</span>
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-lg-3 col-sm-12">
+        <div class="card-content" data-card-id="6">
+          <div class="card-img">
+            <span class="left-up-text">New</span>
+            <img src="https://techno-workdo.myshopify.com/cdn/shop/files/5_82a77df1-e48e-4cc2-a824-292eceeb8ad9_300x300.png?v=1714541824" alt="">
+            <div class="card-buton a-button">
+              <a class="after-blog addtobtn">+ Add to Card</a>
+            </div>
+          </div>
+          <div class="card-text mt-1 px-1">
+            <h5 class="mb-1 names">Mivi DuoPods A450</h5>
+            <span>☆ ☆ ☆ ☆ ☆</span>
+            <span class="price">20.00</span><del class="ms-2">$25.00</del>
+            <div class="d-flex gy-2">
+              <label><input class="wht" type="radio" name="color1" value="Black"></label>
+              <label class="ms-2"><input class="blck" type="radio" name="color1" value="Gray"></label>
+            </div>
+            <div class="bot-icon">
+              <i class="fa-regular fa-heart"></i>
+              <span>|</span>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <span>|</span>
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-lg-3 col-sm-12">
+        <div class="card-content" data-card-id="7">
+          <div class="card-img">
+            <span class="left-up-text">New</span>
+            <img src="https://techno-workdo.myshopify.com/cdn/shop/files/1_300x300.png?v=1714541171" alt="">
+            <div class="card-buton a-button">
+              <a class="after-blog addtobtn">+ Add to Card</a>
+            </div>
+          </div>
+          <div class="card-text mt-1 px-1">
+            <h5 class="mb-1 names">boAt Airdopes 121v2</h5>
+            <span>☆ ☆ ☆ ☆ ☆</span>
+            <span class="price">20.00</span><del class="ms-2">$25.00</del>
+            <div class="d-flex gy-2">
+              <label><input class="wht" type="radio" name="color1" value="Black"></label>
+              <label class="ms-2"><input class="blck" type="radio" name="color1" value="Gray"></label>
+            </div>
+            <div class="bot-icon">
+              <i class="fa-regular fa-heart"></i>
+              <span>|</span>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <span>|</span>
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-12">
+        <div class="card-content" data-card-id="8">
+          <div class="card-img">
+            <span class="left-up-text">New</span>
+            <img src="https://techno-workdo.myshopify.com/cdn/shop/files/1_e0d765ba-4250-487d-82cc-8bc06a298be8_300x300.png?v=1714544396" alt="">
+            <div class="card-buton a-button">
+              <a class="after-blog addtobtn">+ Add to Card</a>
+            </div>
+          </div>
+          <div class="card-text mt-1 px-1">
+            <h5 class="mb-1 names">OnePlus 11</h5>
+            <span>☆ ☆ ☆ ☆ ☆</span>
+            <span class="price">20.00</span><del class="ms-2">$25.00</del>
+            <div class="d-flex gy-2">
+              <label><input class="wht" type="radio" name="color1" value="Black"></label>
+              <label class="ms-2"><input class="blck" type="radio" name="color1" value="Gray"></label>
+            </div>
+            <div class="bot-icon">
+              <i class="fa-regular fa-heart"></i>
+              <span>|</span>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <span>|</span>
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="containers">
+
+      <section id="big-discount" class="p-4">
+        <div class="b-text">
+          <p class="mt-4">Big discount</p>
+          <h1>Apple iPhone 15 pro max</h1>
+        
+          <span>$50.00<del class="ms-2">$25.00</del></span>
+        </div>
+        <button class="a-button">
+          <a href="#">+  Add to Card</a>
+        </button>
+       
+      </section>
+    </div>
+    <footer>
+      <div class="fot">
+        <p>© 2024 Techno WorkDo | Powered by Shopify</p>
+        <div class="f-pay">
+          <div class="payment-img"><svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master">
+              <title id="pi-master">Mastercard</title>
+              <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
+              </path>
+              <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+              <circle fill="#EB001B" cx="15" cy="12" r="7"></circle>
+              <circle fill="#F79E1B" cx="23" cy="12" r="7"></circle>
+              <path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z">
+              </path>
+            </svg></div>
+          <div class="payment-img"><svg class="icon icon--full-color" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-american_express" viewBox="0 0 38 24" width="38" height="24">
+              <title id="pi-american_express">American Express</title>
+              <path fill="#000" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z" opacity=".07"></path>
+              <path fill="#006FCF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32Z">
+              </path>
+              <path fill="#FFF" d="M22.012 19.936v-8.421L37 11.528v2.326l-1.732 1.852L37 17.573v2.375h-2.766l-1.47-1.622-1.46 1.628-9.292-.02Z">
+              </path>
+              <path fill="#006FCF" d="M23.013 19.012v-6.57h5.572v1.513h-3.768v1.028h3.678v1.488h-3.678v1.01h3.768v1.531h-5.572Z"></path>
+              <path fill="#006FCF" d="m28.557 19.012 3.083-3.289-3.083-3.282h2.386l1.884 2.083 1.89-2.082H37v.051l-3.017 3.23L37 18.92v.093h-2.307l-1.917-2.103-1.898 2.104h-2.321Z">
+              </path>
+              <path fill="#FFF" d="M22.71 4.04h3.614l1.269 2.881V4.04h4.46l.77 2.159.771-2.159H37v8.421H19l3.71-8.421Z">
+              </path>
+              <path fill="#006FCF" d="m23.395 4.955-2.916 6.566h2l.55-1.315h2.98l.55 1.315h2.05l-2.904-6.566h-2.31Zm.25 3.777.875-2.09.873 2.09h-1.748Z">
+              </path>
+              <path fill="#006FCF" d="M28.581 11.52V4.953l2.811.01L32.84 9l1.456-4.046H37v6.565l-1.74.016v-4.51l-1.644 4.494h-1.59L30.35 7.01v4.51h-1.768Z">
+              </path>
+            </svg></div>
+          <div class="payment-img"><svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal">
+              <title id="pi-paypal">PayPal</title>
+              <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
+              </path>
+              <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+              <path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z">
+              </path>
+              <path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z">
+              </path>
+              <path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z">
+              </path>
+            </svg></div>
+          <div class="payment-img"><svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-diners_club">
+              <title id="pi-diners_club">Diners Club</title>
+              <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
+              </path>
+              <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+              <path d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z" fill="#3086C8"></path>
+            </svg></div>
+          <div class="payment-img"><svg class="icon icon--full-color" viewBox="0 0 38 24" width="38" height="24" role="img" aria-labelledby="pi-discover" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title id="pi-discover">Discover</title>
+              <path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+              <path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z" fill="#fff"></path>
+              <path d="M3.57 7.16H2v5.5h1.57c.83 0 1.43-.2 1.96-.63.63-.52 1-1.3 1-2.11-.01-1.63-1.22-2.76-2.96-2.76zm1.26 4.14c-.34.3-.77.44-1.47.44h-.29V8.1h.29c.69 0 1.11.12 1.47.44.37.33.59.84.59 1.37 0 .53-.22 1.06-.59 1.39zm2.19-4.14h1.07v5.5H7.02v-5.5zm3.69 2.11c-.64-.24-.83-.4-.83-.69 0-.35.34-.61.8-.61.32 0 .59.13.86.45l.56-.73c-.46-.4-1.01-.61-1.62-.61-.97 0-1.72.68-1.72 1.58 0 .76.35 1.15 1.35 1.51.42.15.63.25.74.31.21.14.32.34.32.57 0 .45-.35.78-.83.78-.51 0-.92-.26-1.17-.73l-.69.67c.49.73 1.09 1.05 1.9 1.05 1.11 0 1.9-.74 1.9-1.81.02-.89-.35-1.29-1.57-1.74zm1.92.65c0 1.62 1.27 2.87 2.9 2.87.46 0 .86-.09 1.34-.32v-1.26c-.43.43-.81.6-1.29.6-1.08 0-1.85-.78-1.85-1.9 0-1.06.79-1.89 1.8-1.89.51 0 .9.18 1.34.62V7.38c-.47-.24-.86-.34-1.32-.34-1.61 0-2.92 1.28-2.92 2.88zm12.76.94l-1.47-3.7h-1.17l2.33 5.64h.58l2.37-5.64h-1.16l-1.48 3.7zm3.13 1.8h3.04v-.93h-1.97v-1.48h1.9v-.93h-1.9V8.1h1.97v-.94h-3.04v5.5zm7.29-3.87c0-1.03-.71-1.62-1.95-1.62h-1.59v5.5h1.07v-2.21h.14l1.48 2.21h1.32l-1.73-2.32c.81-.17 1.26-.72 1.26-1.56zm-2.16.91h-.31V8.03h.33c.67 0 1.03.28 1.03.82 0 .55-.36.85-1.05.85z" fill="#231F20"></path>
+              <path d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint0_linear)">
+              </path>
+              <path opacity=".65" d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint1_linear)"></path>
+              <path d="M36.57 7.506c0-.1-.07-.15-.18-.15h-.16v.48h.12v-.19l.14.19h.14l-.16-.2c.06-.01.1-.06.1-.13zm-.2.07h-.02v-.13h.02c.06 0 .09.02.09.06 0 .05-.03.07-.09.07z" fill="#231F20"></path>
+              <path d="M36.41 7.176c-.23 0-.42.19-.42.42 0 .23.19.42.42.42.23 0 .42-.19.42-.42 0-.23-.19-.42-.42-.42zm0 .77c-.18 0-.34-.15-.34-.35 0-.19.15-.35.34-.35.18 0 .33.16.33.35 0 .19-.15.35-.33.35z" fill="#231F20"></path>
+              <path d="M37 12.984S27.09 19.873 8.976 23h26.023a2 2 0 002-1.984l.024-3.02L37 12.985z" fill="#F48120">
+              </path>
+              <defs>
+                
+                
+              </defs>
+            </svg></div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function toggleSidebar() {
+                $(".button").toggleClass("active");
+                $(".res-bar").toggleClass("move-to-left");
+                $(".sidebar-item").toggleClass("active");
+            }
+
+            $(".button").on("click tap", function() {
+                toggleSidebar();
+            });
+
+            $(document).keyup(function(e) {
+                if (e.key === "Escape") {
+                    toggleSidebar();
+                }
+            });
+        });
+    </script>
+  </body>
+</html>
